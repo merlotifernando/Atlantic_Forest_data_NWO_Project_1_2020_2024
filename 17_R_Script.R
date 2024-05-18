@@ -3524,7 +3524,7 @@ CH4_active_plot<- ggplot(CH4_active_2, aes(fill=Treatment, y=CH4, x=Treatment)) 
   scale_fill_manual(values=c("#ED7D31", "#9BCDFF", "#3383CB", "#005AB4", "#52C088", "#00A200", "#006A00"))+
   geom_errorbar(aes(ymin=CH4-sd, ymax=CH4+sd), width=.2,
                 position=position_dodge(.9))+
-  labs(title="CH4 emission/comsuption", x="", y = "(µg C/m2/h)")+
+  labs(title="CH4 emission/comsuption", x="", y = "(Âµg C/m2/h)")+
   theme(axis.text.x = element_blank(), legend.position = "none")
 
 plot(CH4_active_plot)
@@ -3551,7 +3551,7 @@ CH4_assisted_plot<- ggplot(CH4_assisted_2, aes(fill=Treatment, y=CH4, x=Treatmen
   scale_fill_manual(values=c("#fec44f", "#CFC9FF","#A375FF", "#7731EE", "#52C088", "#00A200", "#006A00"))+
   geom_errorbar(aes(ymin=CH4-sd, ymax=CH4+sd), width=.2,
                 position=position_dodge(.9))+
-  labs(title="CH4 emission/comsuption", x="", y = "(µg C/m2/h)")+
+  labs(title="CH4 emission/comsuption", x="", y = "(Âµg C/m2/h)")+
   theme(axis.text.x = element_blank(), legend.position = "none")
 
 plot(CH4_assisted_plot)
